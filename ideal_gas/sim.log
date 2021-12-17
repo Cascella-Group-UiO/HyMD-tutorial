@@ -1,0 +1,177 @@
+2021-12-17 22:44:16,353 INFO     [configure_runtime.py:131] <configure_runtime> {rank 0/6} Attempting to parse config file ideal_gas.toml as .toml
+2021-12-17 22:44:16,354 INFO     [configure_runtime.py:139] <configure_runtime> {rank 0/6} Successfully parsed ideal_gas.toml as .toml file
+2021-12-17 22:44:16,354 INFO     [configure_runtime.py:143] <configure_runtime> {rank 0/6} 
+
+	Config: /Users/mortenledum/Documents/HyMD-tutorial/ideal_gas/ideal_gas.toml
+	--------------------------------------------------
+	n_steps: 100
+	time_step: 0.01
+	box_size: [5.0, 5.0, 5.0]
+	mesh_size: [1, 1, 1]
+	sigma: 1.0
+	kappa: 0.05
+	n_print: 10
+	tau: 0.1
+	start_temperature: 300
+	target_temperature: False
+	mass: None
+	hamiltonian: defaultnochi
+	domain_decomposition: None
+	integrator: velocity-verlet
+	respa_inner: 1
+	file_name: /Users/mortenledum/Documents/HyMD-tutorial/ideal_gas/ideal_gas.toml
+	name: None
+	tags: []
+	n_particles: None
+	max_molecule_size: None
+	n_flush: None
+	thermostat_work: 0.0
+	initial_energy: None
+	cancel_com_momentum: False
+	coulombtype: None
+	dielectric_const: None
+	command_line_full: /Users/mortenledum/Documents/HyMD/hymd/__main__.py ideal_gas.toml ideal_gas.HDF5 --disable-field --velocity-output --force-output --seed 1 --verbose 2
+	bonds:
+	angle_bonds:
+	dihedrals:
+	chi:
+
+2021-12-17 22:44:16,402 INFO     [input_parser.py:367] <check_max_molecule_size> {rank 0/6} No max_molecule_size found in toml file /Users/mortenledum/Documents/HyMD-tutorial/ideal_gas/ideal_gas.toml, defaulting to 201
+2021-12-17 22:44:16,403 INFO     [input_parser.py:730] <check_mass> {rank 0/6} no mass specified, defaulting to 72.0
+2021-12-17 22:44:16,404 INFO     [input_parser.py:343] <check_n_particles> {rank 0/6} No n_particles found in toml file /Users/mortenledum/Documents/HyMD-tutorial/ideal_gas/ideal_gas.toml, defaulting to indices.shape (125)
+2021-12-17 22:44:16,405 INFO     [thermostat.py:44] <generate_initial_velocities> {rank 0/6} Initialized 125 velocities, target kinetic energy: 467.688493125, actual kinetic energy generated: 467.6884517669678
+2021-12-17 22:44:16,538 INFO     [main.py:182] <main> {rank 0/6} pfft-python processor mesh: (3, 2)
+2021-12-17 22:44:16,580 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+            0            0          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,581 INFO     [main.py:546] <main> {rank 0/6} MD step =          0
+2021-12-17 22:44:16,581 INFO     [main.py:579] <main> {rank 0/6} MD step =          1   step time: 00:00:00.000340          Performance: 4994.220 ns/day   0.005 hours/ns   5780.347 steps/s
+2021-12-17 22:44:16,581 INFO     [main.py:579] <main> {rank 0/6} MD step =          2   step time: 00:00:00.000318          Performance: 3903.614 ns/day   0.006 hours/ns   4518.072 steps/s
+2021-12-17 22:44:16,581 INFO     [main.py:579] <main> {rank 0/6} MD step =          3   step time: 00:00:00.000218          Performance: 3918.367 ns/day   0.006 hours/ns   4535.147 steps/s
+2021-12-17 22:44:16,582 INFO     [main.py:579] <main> {rank 0/6} MD step =          4   step time: 00:00:00.000205          Performance: 3974.241 ns/day   0.006 hours/ns   4599.816 steps/s
+2021-12-17 22:44:16,582 INFO     [main.py:579] <main> {rank 0/6} MD step =          5   step time: 00:00:00.000190          Performance: 4059.514 ns/day   0.006 hours/ns   4698.512 steps/s
+2021-12-17 22:44:16,582 INFO     [main.py:579] <main> {rank 0/6} MD step =          6   step time: 00:00:00.000138          Performance: 4274.205 ns/day   0.006 hours/ns   4946.996 steps/s
+2021-12-17 22:44:16,582 INFO     [main.py:579] <main> {rank 0/6} MD step =          7   step time: 00:00:00.000138          Performance: 4450.741 ns/day   0.005 hours/ns   5151.320 steps/s
+2021-12-17 22:44:16,582 INFO     [main.py:579] <main> {rank 0/6} MD step =          8   step time: 00:00:00.000152          Performance: 4560.704 ns/day   0.005 hours/ns   5278.592 steps/s
+2021-12-17 22:44:16,582 INFO     [main.py:579] <main> {rank 0/6} MD step =          9   step time: 00:00:00.000209          Performance: 4514.107 ns/day   0.005 hours/ns   5224.660 steps/s
+2021-12-17 22:44:16,583 INFO     [main.py:579] <main> {rank 0/6} MD step =         10   step time: 00:00:00.000154          Performance: 4595.745 ns/day   0.005 hours/ns   5319.149 steps/s
+2021-12-17 22:44:16,590 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           10          0.1          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,590 INFO     [main.py:579] <main> {rank 0/6} MD step =         11   step time: 00:00:00.007792          Performance: 1051.521 ns/day   0.023 hours/ns   1217.039 steps/s
+2021-12-17 22:44:16,591 INFO     [main.py:579] <main> {rank 0/6} MD step =         12   step time: 00:00:00.000185          Performance: 1118.168 ns/day   0.021 hours/ns   1294.176 steps/s
+2021-12-17 22:44:16,591 INFO     [main.py:579] <main> {rank 0/6} MD step =         13   step time: 00:00:00.000212          Performance: 1179.292 ns/day   0.020 hours/ns   1364.922 steps/s
+2021-12-17 22:44:16,591 INFO     [main.py:579] <main> {rank 0/6} MD step =         14   step time: 00:00:00.000216          Performance: 1237.468 ns/day   0.019 hours/ns   1432.254 steps/s
+2021-12-17 22:44:16,591 INFO     [main.py:579] <main> {rank 0/6} MD step =         15   step time: 00:00:00.000293          Performance: 1284.042 ns/day   0.019 hours/ns   1486.160 steps/s
+2021-12-17 22:44:16,591 INFO     [main.py:579] <main> {rank 0/6} MD step =         16   step time: 00:00:00.000169          Performance: 1343.210 ns/day   0.018 hours/ns   1554.641 steps/s
+2021-12-17 22:44:16,592 INFO     [main.py:579] <main> {rank 0/6} MD step =         17   step time: 00:00:00.000151          Performance: 1402.850 ns/day   0.017 hours/ns   1623.669 steps/s
+2021-12-17 22:44:16,592 INFO     [main.py:579] <main> {rank 0/6} MD step =         18   step time: 00:00:00.000147          Performance: 1461.408 ns/day   0.016 hours/ns   1691.445 steps/s
+2021-12-17 22:44:16,592 INFO     [main.py:579] <main> {rank 0/6} MD step =         19   step time: 00:00:00.000152          Performance: 1517.787 ns/day   0.016 hours/ns   1756.697 steps/s
+2021-12-17 22:44:16,592 INFO     [main.py:579] <main> {rank 0/6} MD step =         20   step time: 00:00:00.000142          Performance: 1574.044 ns/day   0.015 hours/ns   1821.810 steps/s
+2021-12-17 22:44:16,600 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           20          0.2          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,600 INFO     [main.py:579] <main> {rank 0/6} MD step =         21   step time: 00:00:00.008338          Performance: 956.859 ns/day   0.025 hours/ns   1107.475 steps/s
+2021-12-17 22:44:16,601 INFO     [main.py:579] <main> {rank 0/6} MD step =         22   step time: 00:00:00.000281          Performance: 986.399 ns/day   0.024 hours/ns   1141.666 steps/s
+2021-12-17 22:44:16,601 INFO     [main.py:579] <main> {rank 0/6} MD step =         23   step time: 00:00:00.000203          Performance: 1019.018 ns/day   0.024 hours/ns   1179.419 steps/s
+2021-12-17 22:44:16,601 INFO     [main.py:579] <main> {rank 0/6} MD step =         24   step time: 00:00:00.000192          Performance: 1051.555 ns/day   0.023 hours/ns   1217.078 steps/s
+2021-12-17 22:44:16,601 INFO     [main.py:579] <main> {rank 0/6} MD step =         25   step time: 00:00:00.000178          Performance: 1084.222 ns/day   0.022 hours/ns   1254.887 steps/s
+2021-12-17 22:44:16,601 INFO     [main.py:579] <main> {rank 0/6} MD step =         26   step time: 00:00:00.000207          Performance: 1114.785 ns/day   0.022 hours/ns   1290.261 steps/s
+2021-12-17 22:44:16,602 INFO     [main.py:579] <main> {rank 0/6} MD step =         27   step time: 00:00:00.000172          Performance: 1146.649 ns/day   0.021 hours/ns   1327.140 steps/s
+2021-12-17 22:44:16,602 INFO     [main.py:579] <main> {rank 0/6} MD step =         28   step time: 00:00:00.000166          Performance: 1178.330 ns/day   0.020 hours/ns   1363.807 steps/s
+2021-12-17 22:44:16,602 INFO     [main.py:579] <main> {rank 0/6} MD step =         29   step time: 00:00:00.000180          Performance: 1208.730 ns/day   0.020 hours/ns   1398.993 steps/s
+2021-12-17 22:44:16,602 INFO     [main.py:579] <main> {rank 0/6} MD step =         30   step time: 00:00:00.000179          Performance: 1238.681 ns/day   0.019 hours/ns   1433.659 steps/s
+2021-12-17 22:44:16,613 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           30          0.3          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,613 INFO     [main.py:579] <main> {rank 0/6} MD step =         31   step time: 00:00:00.010707          Performance: 855.181 ns/day   0.028 hours/ns   989.793 steps/s
+2021-12-17 22:44:16,613 INFO     [main.py:579] <main> {rank 0/6} MD step =         32   step time: 00:00:00.000213          Performance: 876.133 ns/day   0.027 hours/ns   1014.043 steps/s
+2021-12-17 22:44:16,613 INFO     [main.py:579] <main> {rank 0/6} MD step =         33   step time: 00:00:00.000169          Performance: 898.019 ns/day   0.027 hours/ns   1039.374 steps/s
+2021-12-17 22:44:16,613 INFO     [main.py:579] <main> {rank 0/6} MD step =         34   step time: 00:00:00.000161          Performance: 919.904 ns/day   0.026 hours/ns   1064.704 steps/s
+2021-12-17 22:44:16,614 INFO     [main.py:579] <main> {rank 0/6} MD step =         35   step time: 00:00:00.000191          Performance: 940.721 ns/day   0.026 hours/ns   1088.797 steps/s
+2021-12-17 22:44:16,614 INFO     [main.py:579] <main> {rank 0/6} MD step =         36   step time: 00:00:00.000182          Performance: 961.559 ns/day   0.025 hours/ns   1112.916 steps/s
+2021-12-17 22:44:16,614 INFO     [main.py:579] <main> {rank 0/6} MD step =         37   step time: 00:00:00.000178          Performance: 982.288 ns/day   0.024 hours/ns   1136.908 steps/s
+2021-12-17 22:44:16,614 INFO     [main.py:579] <main> {rank 0/6} MD step =         38   step time: 00:00:00.000191          Performance: 1002.410 ns/day   0.024 hours/ns   1160.196 steps/s
+2021-12-17 22:44:16,614 INFO     [main.py:579] <main> {rank 0/6} MD step =         39   step time: 00:00:00.000156          Performance: 1023.363 ns/day   0.023 hours/ns   1184.448 steps/s
+2021-12-17 22:44:16,615 INFO     [main.py:579] <main> {rank 0/6} MD step =         40   step time: 00:00:00.000246          Performance: 1041.362 ns/day   0.023 hours/ns   1205.280 steps/s
+2021-12-17 22:44:16,622 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           40          0.4          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,623 INFO     [main.py:579] <main> {rank 0/6} MD step =         41   step time: 00:00:00.008666          Performance: 850.175 ns/day   0.028 hours/ns   983.998 steps/s
+2021-12-17 22:44:16,624 INFO     [main.py:579] <main> {rank 0/6} MD step =         42   step time: 00:00:00.000366          Performance: 863.017 ns/day   0.028 hours/ns   998.862 steps/s
+2021-12-17 22:44:16,624 INFO     [main.py:579] <main> {rank 0/6} MD step =         43   step time: 00:00:00.000326          Performance: 876.450 ns/day   0.027 hours/ns   1014.409 steps/s
+2021-12-17 22:44:16,624 INFO     [main.py:579] <main> {rank 0/6} MD step =         44   step time: 00:00:00.000246          Performance: 891.314 ns/day   0.027 hours/ns   1031.613 steps/s
+2021-12-17 22:44:16,624 INFO     [main.py:579] <main> {rank 0/6} MD step =         45   step time: 00:00:00.000184          Performance: 907.294 ns/day   0.026 hours/ns   1050.108 steps/s
+2021-12-17 22:44:16,624 INFO     [main.py:579] <main> {rank 0/6} MD step =         46   step time: 00:00:00.000181          Performance: 923.203 ns/day   0.026 hours/ns   1068.522 steps/s
+2021-12-17 22:44:16,625 INFO     [main.py:579] <main> {rank 0/6} MD step =         47   step time: 00:00:00.000175          Performance: 939.109 ns/day   0.026 hours/ns   1086.932 steps/s
+2021-12-17 22:44:16,625 INFO     [main.py:579] <main> {rank 0/6} MD step =         48   step time: 00:00:00.000183          Performance: 954.718 ns/day   0.025 hours/ns   1104.997 steps/s
+2021-12-17 22:44:16,625 INFO     [main.py:579] <main> {rank 0/6} MD step =         49   step time: 00:00:00.000198          Performance: 969.871 ns/day   0.025 hours/ns   1122.536 steps/s
+2021-12-17 22:44:16,625 INFO     [main.py:579] <main> {rank 0/6} MD step =         50   step time: 00:00:00.000200          Performance: 984.846 ns/day   0.024 hours/ns   1139.869 steps/s
+2021-12-17 22:44:16,635 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           50          0.5          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,636 INFO     [main.py:579] <main> {rank 0/6} MD step =         51   step time: 00:00:00.010648          Performance: 811.121 ns/day   0.030 hours/ns   938.798 steps/s
+2021-12-17 22:44:16,636 INFO     [main.py:579] <main> {rank 0/6} MD step =         52   step time: 00:00:00.000312          Performance: 822.089 ns/day   0.029 hours/ns   951.492 steps/s
+2021-12-17 22:44:16,636 INFO     [main.py:579] <main> {rank 0/6} MD step =         53   step time: 00:00:00.000227          Performance: 834.201 ns/day   0.029 hours/ns   965.510 steps/s
+2021-12-17 22:44:16,637 INFO     [main.py:579] <main> {rank 0/6} MD step =         54   step time: 00:00:00.000218          Performance: 846.350 ns/day   0.028 hours/ns   979.571 steps/s
+2021-12-17 22:44:16,637 INFO     [main.py:579] <main> {rank 0/6} MD step =         55   step time: 00:00:00.000477          Performance: 854.479 ns/day   0.028 hours/ns   988.980 steps/s
+2021-12-17 22:44:16,637 INFO     [main.py:579] <main> {rank 0/6} MD step =         56   step time: 00:00:00.000316          Performance: 864.910 ns/day   0.028 hours/ns   1001.054 steps/s
+2021-12-17 22:44:16,638 INFO     [main.py:579] <main> {rank 0/6} MD step =         57   step time: 00:00:00.000287          Performance: 875.671 ns/day   0.027 hours/ns   1013.508 steps/s
+2021-12-17 22:44:16,639 INFO     [main.py:579] <main> {rank 0/6} MD step =         58   step time: 00:00:00.000914          Performance: 876.765 ns/day   0.027 hours/ns   1014.774 steps/s
+2021-12-17 22:44:16,639 INFO     [main.py:579] <main> {rank 0/6} MD step =         59   step time: 00:00:00.000274          Performance: 887.443 ns/day   0.027 hours/ns   1027.133 steps/s
+2021-12-17 22:44:16,639 INFO     [main.py:579] <main> {rank 0/6} MD step =         60   step time: 00:00:00.000221          Performance: 898.833 ns/day   0.027 hours/ns   1040.317 steps/s
+2021-12-17 22:44:16,649 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           60          0.6          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,649 INFO     [main.py:579] <main> {rank 0/6} MD step =         61   step time: 00:00:00.009677          Performance: 784.155 ns/day   0.031 hours/ns   907.587 steps/s
+2021-12-17 22:44:16,649 INFO     [main.py:579] <main> {rank 0/6} MD step =         62   step time: 00:00:00.000228          Performance: 794.152 ns/day   0.030 hours/ns   919.158 steps/s
+2021-12-17 22:44:16,649 INFO     [main.py:579] <main> {rank 0/6} MD step =         63   step time: 00:00:00.000204          Performance: 804.364 ns/day   0.030 hours/ns   930.977 steps/s
+2021-12-17 22:44:16,649 INFO     [main.py:579] <main> {rank 0/6} MD step =         64   step time: 00:00:00.000182          Performance: 814.775 ns/day   0.029 hours/ns   943.027 steps/s
+2021-12-17 22:44:16,650 INFO     [main.py:579] <main> {rank 0/6} MD step =         65   step time: 00:00:00.000175          Performance: 825.215 ns/day   0.029 hours/ns   955.110 steps/s
+2021-12-17 22:44:16,650 INFO     [main.py:579] <main> {rank 0/6} MD step =         66   step time: 00:00:00.000172          Performance: 835.638 ns/day   0.029 hours/ns   967.174 steps/s
+2021-12-17 22:44:16,650 INFO     [main.py:579] <main> {rank 0/6} MD step =         67   step time: 00:00:00.000171          Performance: 846.022 ns/day   0.028 hours/ns   979.192 steps/s
+2021-12-17 22:44:16,650 INFO     [main.py:579] <main> {rank 0/6} MD step =         68   step time: 00:00:00.000265          Performance: 855.200 ns/day   0.028 hours/ns   989.815 steps/s
+2021-12-17 22:44:16,650 INFO     [main.py:579] <main> {rank 0/6} MD step =         69   step time: 00:00:00.000224          Performance: 864.815 ns/day   0.028 hours/ns   1000.944 steps/s
+2021-12-17 22:44:16,651 INFO     [main.py:579] <main> {rank 0/6} MD step =         70   step time: 00:00:00.000185          Performance: 874.856 ns/day   0.027 hours/ns   1012.564 steps/s
+2021-12-17 22:44:16,661 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           70          0.7          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,661 INFO     [main.py:579] <main> {rank 0/6} MD step =         71   step time: 00:00:00.010124          Performance: 775.245 ns/day   0.031 hours/ns   897.275 steps/s
+2021-12-17 22:44:16,661 INFO     [main.py:579] <main> {rank 0/6} MD step =         72   step time: 00:00:00.000205          Performance: 784.010 ns/day   0.031 hours/ns   907.418 steps/s
+2021-12-17 22:44:16,661 INFO     [main.py:579] <main> {rank 0/6} MD step =         73   step time: 00:00:00.000160          Performance: 793.172 ns/day   0.030 hours/ns   918.023 steps/s
+2021-12-17 22:44:16,661 INFO     [main.py:579] <main> {rank 0/6} MD step =         74   step time: 00:00:00.000177          Performance: 802.129 ns/day   0.030 hours/ns   928.390 steps/s
+2021-12-17 22:44:16,661 INFO     [main.py:579] <main> {rank 0/6} MD step =         75   step time: 00:00:00.000171          Performance: 811.107 ns/day   0.030 hours/ns   938.782 steps/s
+2021-12-17 22:44:16,662 INFO     [main.py:579] <main> {rank 0/6} MD step =         76   step time: 00:00:00.000154          Performance: 820.219 ns/day   0.029 hours/ns   949.328 steps/s
+2021-12-17 22:44:16,662 INFO     [main.py:579] <main> {rank 0/6} MD step =         77   step time: 00:00:00.000167          Performance: 829.164 ns/day   0.029 hours/ns   959.681 steps/s
+2021-12-17 22:44:16,662 INFO     [main.py:579] <main> {rank 0/6} MD step =         78   step time: 00:00:00.000151          Performance: 838.237 ns/day   0.029 hours/ns   970.182 steps/s
+2021-12-17 22:44:16,662 INFO     [main.py:579] <main> {rank 0/6} MD step =         79   step time: 00:00:00.000197          Performance: 846.799 ns/day   0.028 hours/ns   980.092 steps/s
+2021-12-17 22:44:16,662 INFO     [main.py:579] <main> {rank 0/6} MD step =         80   step time: 00:00:00.000178          Performance: 855.519 ns/day   0.028 hours/ns   990.184 steps/s
+2021-12-17 22:44:16,671 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           80          0.8          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,672 INFO     [main.py:579] <main> {rank 0/6} MD step =         81   step time: 00:00:00.009339          Performance: 777.336 ns/day   0.031 hours/ns   899.695 steps/s
+2021-12-17 22:44:16,672 INFO     [main.py:579] <main> {rank 0/6} MD step =         82   step time: 00:00:00.000306          Performance: 784.183 ns/day   0.031 hours/ns   907.620 steps/s
+2021-12-17 22:44:16,672 INFO     [main.py:579] <main> {rank 0/6} MD step =         83   step time: 00:00:00.000440          Performance: 789.831 ns/day   0.030 hours/ns   914.156 steps/s
+2021-12-17 22:44:16,673 INFO     [main.py:579] <main> {rank 0/6} MD step =         84   step time: 00:00:00.000303          Performance: 796.607 ns/day   0.030 hours/ns   921.999 steps/s
+2021-12-17 22:44:16,673 INFO     [main.py:579] <main> {rank 0/6} MD step =         85   step time: 00:00:00.000274          Performance: 803.591 ns/day   0.030 hours/ns   930.082 steps/s
+2021-12-17 22:44:16,673 INFO     [main.py:579] <main> {rank 0/6} MD step =         86   step time: 00:00:00.000241          Performance: 810.821 ns/day   0.030 hours/ns   938.451 steps/s
+2021-12-17 22:44:16,673 INFO     [main.py:579] <main> {rank 0/6} MD step =         87   step time: 00:00:00.000205          Performance: 818.332 ns/day   0.029 hours/ns   947.143 steps/s
+2021-12-17 22:44:16,674 INFO     [main.py:579] <main> {rank 0/6} MD step =         88   step time: 00:00:00.000194          Performance: 825.906 ns/day   0.029 hours/ns   955.910 steps/s
+2021-12-17 22:44:16,674 INFO     [main.py:579] <main> {rank 0/6} MD step =         89   step time: 00:00:00.000186          Performance: 833.521 ns/day   0.029 hours/ns   964.723 steps/s
+2021-12-17 22:44:16,674 INFO     [main.py:579] <main> {rank 0/6} MD step =         90   step time: 00:00:00.000190          Performance: 841.069 ns/day   0.029 hours/ns   973.460 steps/s
+2021-12-17 22:44:16,682 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           90          0.9          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
+2021-12-17 22:44:16,682 INFO     [main.py:579] <main> {rank 0/6} MD step =         91   step time: 00:00:00.008298          Performance: 780.986 ns/day   0.031 hours/ns   903.919 steps/s
+2021-12-17 22:44:16,682 INFO     [main.py:579] <main> {rank 0/6} MD step =         92   step time: 00:00:00.000210          Performance: 787.850 ns/day   0.030 hours/ns   911.863 steps/s
+2021-12-17 22:44:16,683 INFO     [main.py:579] <main> {rank 0/6} MD step =         93   step time: 00:00:00.000159          Performance: 795.082 ns/day   0.030 hours/ns   920.233 steps/s
+2021-12-17 22:44:16,683 INFO     [main.py:579] <main> {rank 0/6} MD step =         94   step time: 00:00:00.000174          Performance: 802.174 ns/day   0.030 hours/ns   928.442 steps/s
+2021-12-17 22:44:16,683 INFO     [main.py:579] <main> {rank 0/6} MD step =         95   step time: 00:00:00.000177          Performance: 809.218 ns/day   0.030 hours/ns   936.595 steps/s
+2021-12-17 22:44:16,683 INFO     [main.py:579] <main> {rank 0/6} MD step =         96   step time: 00:00:00.000161          Performance: 816.365 ns/day   0.029 hours/ns   944.867 steps/s
+2021-12-17 22:44:16,683 INFO     [main.py:579] <main> {rank 0/6} MD step =         97   step time: 00:00:00.000159          Performance: 823.505 ns/day   0.029 hours/ns   953.131 steps/s
+2021-12-17 22:44:16,683 INFO     [main.py:579] <main> {rank 0/6} MD step =         98   step time: 00:00:00.000145          Performance: 830.737 ns/day   0.029 hours/ns   961.501 steps/s
+2021-12-17 22:44:16,684 INFO     [main.py:579] <main> {rank 0/6} MD step =         99   step time: 00:00:00.000162          Performance: 837.810 ns/day   0.029 hours/ns   969.688 steps/s
+2021-12-17 22:44:16,684 INFO     [main.py:951] <main> {rank 0/6} Elapsed time: 00:00:00.374031   Setup time: 00:00:00.270749   MD loop time: 00:00:00.103282
+2021-12-17 22:44:16,693 INFO     [file_io.py:521] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔE
+           99         0.99          300       467.69       467.69            0            0            0            0            0   3.1114e-05   4.9353e-05   6.0081e-05            0
