@@ -1,0 +1,198 @@
+2021-12-18 18:42:09,410 INFO     [configure_runtime.py:131] <configure_runtime> {rank 0/6} Attempting to parse config file ideal_chain.toml as .toml
+2021-12-18 18:42:09,411 INFO     [configure_runtime.py:139] <configure_runtime> {rank 0/6} Successfully parsed ideal_chain.toml as .toml file
+2021-12-18 18:42:09,411 INFO     [configure_runtime.py:143] <configure_runtime> {rank 0/6} 
+
+	Config: /Users/mortenledum/Documents/HyMD-tutorial/ideal_chain/ideal_chain.toml
+	--------------------------------------------------
+	n_steps: 10000
+	time_step: 0.01
+	box_size: [30.0, 30.0, 30.0]
+	mesh_size: [1, 1, 1]
+	sigma: 1.0
+	kappa: 0.05
+	n_print: 200
+	tau: 0.1
+	start_temperature: 50
+	target_temperature: 300
+	mass: None
+	hamiltonian: defaultnochi
+	domain_decomposition: None
+	integrator: velocity-verlet
+	respa_inner: 1
+	file_name: /Users/mortenledum/Documents/HyMD-tutorial/ideal_chain/ideal_chain.toml
+	name: None
+	tags: []
+	n_particles: None
+	max_molecule_size: None
+	n_flush: None
+	thermostat_work: 0.0
+	initial_energy: None
+	cancel_com_momentum: False
+	coulombtype: None
+	dielectric_const: None
+	command_line_full: /Users/mortenledum/Documents/HyMD/hymd/__main__.py ideal_chain.toml ideal_chain.HDF5 --disable-field --seed 1 --verbose 1
+	bonds:
+		A A: 0.5, 1000.0
+	angle_bonds:
+	dihedrals:
+	chi:
+
+2021-12-18 18:42:09,452 INFO     [input_parser.py:367] <check_max_molecule_size> {rank 0/6} No max_molecule_size found in toml file /Users/mortenledum/Documents/HyMD-tutorial/ideal_chain/ideal_chain.toml, defaulting to 201
+2021-12-18 18:42:09,452 INFO     [input_parser.py:730] <check_mass> {rank 0/6} no mass specified, defaulting to 72.0
+2021-12-18 18:42:09,453 INFO     [input_parser.py:343] <check_n_particles> {rank 0/6} No n_particles found in toml file /Users/mortenledum/Documents/HyMD-tutorial/ideal_chain/ideal_chain.toml, defaulting to indices.shape (150)
+2021-12-18 18:42:09,454 INFO     [thermostat.py:44] <generate_initial_velocities> {rank 0/6} Initialized 150 velocities, target kinetic energy: 93.537698625, actual kinetic energy generated: 93.53770065307617
+2021-12-18 18:42:09,560 INFO     [main.py:182] <main> {rank 0/6} pfft-python processor mesh: (3, 2)
+2021-12-18 18:42:09,595 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+            0            0           50       5075.3       93.538       4981.8            0       4981.8            0            0  -6.4373e-06   6.4373e-06  -3.8624e-05  -3.2187e-06
+2021-12-18 18:42:09,693 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+          200            2       303.32       977.48       567.43       410.05            0       410.05            0            0   8.4758e-05  -5.9545e-05   8.0466e-06      -3.9449
+2021-12-18 18:42:09,780 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+          400            4       289.46       965.35        541.5       423.85            0       423.85            0            0   0.00012955  -3.4869e-05  -2.6286e-05      -3.9298
+2021-12-18 18:42:09,862 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+          600            6       329.69       1025.8       616.77       409.06            0       409.06            0            0  -4.4256e-05  -0.00032455  -6.1154e-05      -3.8969
+2021-12-18 18:42:09,956 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+          800            8       277.41       858.91       518.97       339.94            0       339.94            0            0  -2.6017e-05  -0.00036263  -0.00012124      -3.9482
+2021-12-18 18:42:10,045 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         1000           10        290.5       861.62       543.45       318.17            0       318.17            0            0   0.00017756  -0.00027868  -0.00014967      -3.9548
+2021-12-18 18:42:10,131 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         1200           12       340.52       979.12       637.02        342.1            0        342.1            0            0   3.2187e-05  -0.00037819  -0.00028861      -3.9446
+2021-12-18 18:42:10,216 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         1400           14       286.76       891.35       536.46       354.89            0       354.89            0            0  -6.4373e-06  -0.00031677  -0.00031435      -3.8841
+2021-12-18 18:42:10,300 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         1600           16       328.79       927.98       615.09       312.89            0       312.89            0            0    0.0001789  -0.00027412  -0.00034386      -3.9271
+2021-12-18 18:42:10,385 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         1800           18        318.7       937.97       596.21       341.77            0       341.77            0            0   0.00011212  -0.00037819   -0.0003562      -3.9279
+2021-12-18 18:42:10,482 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         2000           20       265.89        804.3       497.41       306.89            0       306.89            0            0   0.00023925  -0.00060725  -0.00036478      -3.9364
+2021-12-18 18:42:10,578 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         2200           22       285.66       817.79        534.4       283.39            0       283.39            0            0   0.00032321  -0.00070462   -0.0002473      -3.9549
+2021-12-18 18:42:10,674 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         2400           24       265.52       808.67       496.73       311.94            0       311.94            0            0   0.00053349  -0.00061476  -0.00049996      -3.9172
+2021-12-18 18:42:10,761 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         2600           26       305.64       828.74       571.77       256.96            0       256.96            0            0   0.00068906  -0.00048012  -0.00043666      -3.9531
+2021-12-18 18:42:10,846 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         2800           28       298.84        809.6       559.05       250.55            0       250.55            0            0   0.00061154  -0.00034359  -0.00041735      -3.9397
+2021-12-18 18:42:10,938 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         3000           30       319.82       865.31        598.3          267            0          267            0            0   0.00084221  -0.00026339  -0.00062227      -3.9475
+2021-12-18 18:42:11,029 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         3200           32       336.62       875.91       629.74       246.17            0       246.17            0            0   0.00076604  -0.00032133  -0.00083899      -3.9525
+2021-12-18 18:42:11,116 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         3400           34       311.05       851.21       581.89       269.31            0       269.31            0            0   0.00085938  -0.00052035  -0.00090605      -3.9486
+2021-12-18 18:42:11,204 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         3600           36       295.82       820.81       553.41        267.4            0        267.4            0            0    0.0007875  -0.00057024  -0.00093931      -3.9411
+2021-12-18 18:42:11,300 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         3800           38       284.13       759.26       531.54       227.72            0       227.72            0            0   0.00083122  -0.00052223  -0.00081915      -3.9629
+2021-12-18 18:42:11,393 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         4000           40       290.22       811.56       542.92       268.63            0       268.63            0            0   0.00098088  -0.00051177  -0.00076711      -3.9016
+2021-12-18 18:42:11,489 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         4200           42       339.82       834.77       635.72       199.05            0       199.05            0            0    0.0010208  -0.00057775  -0.00072956      -3.9408
+2021-12-18 18:42:11,574 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         4400           44       315.43       824.41       590.09       234.32            0       234.32            0            0    0.0010369  -0.00057909  -0.00085562      -3.9411
+2021-12-18 18:42:11,662 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         4600           46       295.93       753.44       553.61       199.83            0       199.83            0            0    0.0010225  -0.00040877  -0.00097311      -3.9552
+2021-12-18 18:42:11,748 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         4800           48       294.55        804.8       551.03       253.77            0       253.77            0            0    0.0011536  -0.00037658   -0.0011566      -3.9129
+2021-12-18 18:42:11,834 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         5000           50       288.28       754.39       539.29        215.1            0        215.1            0            0    0.0010238  -0.00042969   -0.0011464      -3.9525
+2021-12-18 18:42:11,930 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         5200           52       287.24       831.04       537.35       293.69            0       293.69            0            0    0.0011925  -0.00052249  -0.00093985      -3.9159
+2021-12-18 18:42:12,024 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         5400           54       323.82       881.95       605.79       276.16            0       276.16            0            0    0.0012325  -0.00070542   -0.0010364       -3.931
+2021-12-18 18:42:12,110 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         5600           56       255.98       724.83       478.88       245.95            0       245.95            0            0    0.0011303  -0.00046965  -0.00094575      -3.9292
+2021-12-18 18:42:12,195 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         5800           58       304.92       799.62       570.42       229.19            0       229.19            0            0    0.0012665  -0.00066197   -0.0011383      -3.9471
+2021-12-18 18:42:12,282 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         6000           60       257.09       746.01       480.95       265.06            0       265.06            0            0    0.0013132  -0.00070649   -0.0011249       -3.923
+2021-12-18 18:42:12,368 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         6200           62          283       773.66       529.42       244.24            0       244.24            0            0    0.0011941  -0.00086528   -0.0011684      -3.9391
+2021-12-18 18:42:12,463 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         6400           64       314.57       867.86       588.49       279.37            0       279.37            0            0    0.0011426  -0.00084436   -0.0010375      -3.8982
+2021-12-18 18:42:12,562 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         6600           66       315.83       828.45       590.83       237.62            0       237.62            0            0    0.0010911  -0.00075907  -0.00091249      -3.9313
+2021-12-18 18:42:12,649 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         6800           68       300.57        765.6       562.29       203.31            0       203.31            0            0    0.0011955  -0.00073063    -0.001156      -3.9554
+2021-12-18 18:42:12,736 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         7000           70       300.92       804.82       562.94       241.88            0       241.88            0            0    0.0011523  -0.00068101   -0.0010257      -3.9415
+2021-12-18 18:42:12,822 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         7200           72       328.51       838.64       614.57       224.08            0       224.08            0            0    0.0011107  -0.00082478   -0.0010042      -3.9271
+2021-12-18 18:42:12,906 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         7400           74        282.6       782.58       528.68       253.91            0       253.91            0            0    0.0011212  -0.00086233  -0.00098008      -3.9463
+2021-12-18 18:42:12,991 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         7600           76       275.05       744.43       514.55       229.87            0       229.87            0            0    0.0011306  -0.00075638   -0.0011598      -3.9436
+2021-12-18 18:42:13,077 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         7800           78       295.57       756.48       552.94       203.55            0       203.55            0            0   0.00099993  -0.00052518   -0.0010622      -3.9544
+2021-12-18 18:42:13,163 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         8000           80       273.01       716.87       510.73       206.14            0       206.14            0            0    0.0012132  -0.00057828   -0.0009613      -3.9463
+2021-12-18 18:42:13,249 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         8200           82       295.59       759.88       552.97       206.91            0       206.91            0            0    0.0013309  -0.00079206  -0.00074726      -3.9388
+2021-12-18 18:42:13,335 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         8400           84       289.46       746.76       541.51       205.24            0       205.24            0            0    0.0014741  -0.00085965  -0.00067645      -3.9249
+2021-12-18 18:42:13,422 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         8600           86       276.95       762.79       518.11       244.68            0       244.68            0            0    0.0013567  -0.00076979  -0.00049514      -3.9144
+2021-12-18 18:42:13,518 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         8800           88       316.34       775.24       591.79       183.45            0       183.45            0            0    0.0015664   -0.0007242   -0.0004887      -3.9474
+2021-12-18 18:42:13,604 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9000           90       286.61       800.48       536.18       264.29            0       264.29            0            0    0.0013175  -0.00065714  -0.00054717      -3.9073
+2021-12-18 18:42:13,692 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9200           92       309.32       796.43       578.65       217.77            0       217.77            0            0     0.001468  -0.00060993  -0.00041842      -3.9179
+2021-12-18 18:42:13,783 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9400           94       273.47       764.51       511.59       252.92            0       252.92            0            0    0.0015576  -0.00062817  -0.00037336       -3.913
+2021-12-18 18:42:13,870 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9600           96       276.85       704.57       517.91       186.66            0       186.66            0            0    0.0015546  -0.00045115  -3.0577e-05      -3.9372
+2021-12-18 18:42:13,976 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9800           98       305.63       827.78       571.76       256.02            0       256.02            0            0    0.0015377  -0.00052196  -7.6711e-05      -3.9042
+2021-12-18 18:42:14,066 INFO     [main.py:952] <main> {rank 0/6} Elapsed time: 00:00:04.658672   Setup time: 00:00:00.188334   MD loop time: 00:00:04.470338
+2021-12-18 18:42:14,071 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9999        99.99       281.14       689.41       525.95       163.46            0       163.46            0            0    0.0013854  -0.00073949   6.4373e-05      -3.9375
