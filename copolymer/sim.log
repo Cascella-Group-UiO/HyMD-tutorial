@@ -1,0 +1,56 @@
+2021-12-19 20:29:09,989 INFO     [configure_runtime.py:131] <configure_runtime> {rank 0/6} Attempting to parse config file copolymer.toml as .toml
+2021-12-19 20:29:09,990 INFO     [configure_runtime.py:139] <configure_runtime> {rank 0/6} Successfully parsed copolymer.toml as .toml file
+2021-12-19 20:29:09,990 INFO     [configure_runtime.py:143] <configure_runtime> {rank 0/6}
+
+	Config: /Users/mortenledum/Documents/HyMD-tutorial/copolymer/copolymer.toml
+	--------------------------------------------------
+	n_steps: 2000
+	time_step: 0.01
+	box_size: [10.0, 10.0, 10.0]
+	mesh_size: [50, 50, 50]
+	sigma: 0.5
+	kappa: 0.05
+	n_print: 2000
+	tau: 0.1
+	start_temperature: 50
+	target_temperature: 300
+	mass: None
+	hamiltonian: defaultwithchi
+	domain_decomposition: None
+	integrator: respa
+	respa_inner: 15
+	file_name: /Users/mortenledum/Documents/HyMD-tutorial/copolymer/copolymer.toml
+	name: None
+	tags: []
+	n_particles: None
+	max_molecule_size: None
+	n_flush: None
+	thermostat_work: 0.0
+	initial_energy: None
+	cancel_com_momentum: False
+	coulombtype: None
+	dielectric_const: None
+	command_line_full: /Users/mortenledum/Documents/HyMD/hymd/__main__.py copolymer.toml copolymer.HDF5 --seed 1 --verbose 1
+	bonds:
+		A A: 0.25, 1500.0
+		A B: 0.25, 1500.0
+		B B: 0.25, 1500.0
+	angle_bonds:
+		A A A: 180.0, 25.0
+		B B B: 180.0, 25.0
+	dihedrals:
+	chi:
+		A B: 30.0
+
+2021-12-19 20:29:10,037 INFO     [input_parser.py:365] <check_max_molecule_size> {rank 0/6} No max_molecule_size found in toml file /Users/mortenledum/Documents/HyMD-tutorial/copolymer/copolymer.toml, defaulting to 201
+2021-12-19 20:29:10,037 INFO     [input_parser.py:728] <check_mass> {rank 0/6} no mass specified, defaulting to 72.0
+2021-12-19 20:29:10,038 INFO     [input_parser.py:341] <check_n_particles> {rank 0/6} No n_particles found in toml file /Users/mortenledum/Documents/HyMD-tutorial/copolymer/copolymer.toml, defaulting to indices.shape (8320)
+2021-12-19 20:29:10,040 INFO     [thermostat.py:44] <generate_initial_velocities> {rank 0/6} Initialized 8320 velocities, target kinetic energy: 5188.2243504, actual kinetic energy generated: 5188.224517822266
+2021-12-19 20:29:10,187 INFO     [main.py:182] <main> {rank 0/6} pfft-python processor mesh: (3, 2)
+2021-12-19 20:29:10,654 INFO     [file_io.py:524] <store_data> {rank 0/6}
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+            0            0           50   6.2521e+05       5188.2   6.2002e+05   1.1491e+05   1.1503e+05   3.9008e+05            0    0.0010986  -0.00029182  -2.5749e-05  -0.00041199
+2021-12-19 20:29:53,197 INFO     [main.py:960] <main> {rank 0/6} Elapsed time: 00:00:43.219288   Setup time: 00:00:00.676340   MD loop time: 00:00:42.542948
+2021-12-19 20:29:53,223 INFO     [file_io.py:524] <store_data> {rank 0/6}
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         1999       299.85       298.14        74832        30936        43896        18096        11153        14647            0      -0.3931     -0.26147    -0.026093       242.27

@@ -1,0 +1,30 @@
+[simulation]
+integrator = "respa"
+respa_inner = 15
+n_steps = 2000                     # total simulation steps
+n_print = 2000                     # output trajectory data every n_print steps
+time_step = 0.01                   # time step in ps
+box_size = [10.0, 10.0, 10.0]      # simulation box size in nm
+start_temperature = 50             # generate starting temperature in Kelvin
+target_temperature = 300           # thermostat temperature in Kelvin
+tau = 0.1                          # thermostat coupling strength in ps
+hamiltonian = "defaultwithchi"     # interaction energy functional
+kappa = 0.05                       # compressibility in mol/kJ
+
+[field]
+mesh_size = [50, 50, 50]           # FFT grid size
+sigma = 0.5                        # filtering length scale in nm
+chi = [
+  ["A", "B", 30.0],
+]
+
+[bonds]
+bonds = [
+  ["A", "A", 0.25, 1500.0],
+  ["A", "B", 0.25, 1500.0],
+  ["B", "B", 0.25, 1500.0],
+]
+angle_bonds = [
+  ["A", "A", "A", 180.0, 25.0],
+  ["B", "B", "B", 180.0, 25.0],
+]
