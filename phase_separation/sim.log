@@ -1,0 +1,63 @@
+2021-12-19 19:27:06,515 INFO     [configure_runtime.py:131] <configure_runtime> {rank 0/6} Attempting to parse config file phase_separation.toml as .toml
+2021-12-19 19:27:06,516 INFO     [configure_runtime.py:139] <configure_runtime> {rank 0/6} Successfully parsed phase_separation.toml as .toml file
+2021-12-19 19:27:06,516 INFO     [configure_runtime.py:143] <configure_runtime> {rank 0/6} 
+
+	Config: /Users/mortenledum/Documents/HyMD-tutorial/phase_separation/phase_separation.toml
+	--------------------------------------------------
+	n_steps: 10000
+	time_step: 0.01
+	box_size: [5.0, 5.0, 5.0]
+	mesh_size: [20, 20, 20]
+	sigma: 1.0
+	kappa: 0.05
+	n_print: 2000
+	tau: 0.1
+	start_temperature: 300
+	target_temperature: 300
+	mass: None
+	hamiltonian: defaultwithchi
+	domain_decomposition: None
+	integrator: velocity-verlet
+	respa_inner: 1
+	file_name: /Users/mortenledum/Documents/HyMD-tutorial/phase_separation/phase_separation.toml
+	name: None
+	tags: []
+	n_particles: None
+	max_molecule_size: None
+	n_flush: None
+	thermostat_work: 0.0
+	initial_energy: None
+	cancel_com_momentum: False
+	coulombtype: None
+	dielectric_const: None
+	command_line_full: /Users/mortenledum/Documents/HyMD/hymd/__main__.py phase_separation.toml phase_separation.HDF5 --seed 1 --verbose 1
+	bonds:
+	angle_bonds:
+	dihedrals:
+	chi:
+		A B: 40.0
+
+2021-12-19 19:27:06,560 INFO     [input_parser.py:365] <check_max_molecule_size> {rank 0/6} No max_molecule_size found in toml file /Users/mortenledum/Documents/HyMD-tutorial/phase_separation/phase_separation.toml, defaulting to 201
+2021-12-19 19:27:06,561 INFO     [input_parser.py:728] <check_mass> {rank 0/6} no mass specified, defaulting to 72.0
+2021-12-19 19:27:06,562 INFO     [input_parser.py:341] <check_n_particles> {rank 0/6} No n_particles found in toml file /Users/mortenledum/Documents/HyMD-tutorial/phase_separation/phase_separation.toml, defaulting to indices.shape (1040)
+2021-12-19 19:27:06,563 INFO     [thermostat.py:44] <generate_initial_velocities> {rank 0/6} Initialized 1040 velocities, target kinetic energy: 3891.1682627999994, actual kinetic energy generated: 3891.1680450439453
+2021-12-19 19:27:06,696 INFO     [main.py:182] <main> {rank 0/6} pfft-python processor mesh: (3, 2)
+2021-12-19 19:27:06,766 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+            0            0          300        14301       3891.2        10410        10410            0            0            0   -0.0001899    0.0003283   6.8128e-05            0
+2021-12-19 19:27:21,733 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         2000           20       294.69        13920       3822.3        10098        10098            0            0            0  -0.00017166   -0.0001545   0.00034118      0.35957
+2021-12-19 19:27:40,705 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         4000           40       306.51        12467       3975.6         8491         8491            0            0            0   0.00032616   0.00043774     0.000736      0.11254
+2021-12-19 19:27:59,575 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         6000           60       299.41        12855       3883.5       8971.7       8971.7            0            0            0   0.00030041   -0.0021973  -0.00038624      0.36697
+2021-12-19 19:28:18,745 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         8000           80       301.77        12368       3914.1       8454.3       8454.3            0            0            0  -0.00060081   -0.0012188    0.0014248    -0.051569
+2021-12-19 19:28:39,774 INFO     [main.py:952] <main> {rank 0/6} Elapsed time: 00:01:33.260341   Setup time: 00:00:00.253104   MD loop time: 00:01:33.007237
+2021-12-19 19:28:39,792 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       bond E        ang E        dih E           Px           Py           Pz           ΔH
+         9999        99.99       295.73        12274       3835.7       8438.6       8438.6            0            0            0   0.00079823  -0.00042915    0.0023689     -0.24888

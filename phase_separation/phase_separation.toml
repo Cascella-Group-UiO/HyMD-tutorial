@@ -1,0 +1,18 @@
+[simulation]
+integrator = "velocity-verlet"
+n_steps = 10000                    # total simulation steps
+n_print = 2000                     # output trajectory data every n_print steps
+time_step = 0.01                   # time step in ps
+box_size = [5.0, 5.0, 5.0]         # simulation box size in nm
+start_temperature = 300            # generate starting temperature in Kelvin
+target_temperature = 300           # thermostat temperature in Kelvin
+tau = 0.1                          # thermostat coupling strength in ps
+hamiltonian = "defaultwithchi"     # interaction energy functional
+
+[field]
+mesh_size = [20, 20, 20]           # FFT grid size
+sigma = 1.0                        # filtering length scale in nm
+kappa = 0.05                       # compressibility in mol/kJ
+chi = [
+  ['A', 'B', 5.0],
+]
