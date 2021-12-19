@@ -1,0 +1,33 @@
+[simulation]
+integrator = "velocity-verlet"
+n_steps = 10000                    # total simulation steps
+n_print = 200                      # output trajectory data every n_print steps
+time_step = 0.01                   # time step in ps
+box_size = [30.0, 30.0, 30.0]      # simulation box size in nm
+start_temperature = 50             # generate starting temperature in Kelvin
+target_temperature = 300           # thermostat temperature in Kelvin
+tau = 0.1                          # thermostat coupling strength in ps
+hamiltonian = "defaultnochi"       # interaction energy functional
+kappa = 0.05                       # compressibility in mol/kJ
+dielectric_const = 15.0
+
+[field]
+mesh_size = [1, 1, 1]              # FFT grid size
+sigma = 1.0                        # filtering length scale in nm
+
+[bonds]
+bonds = [
+  ["A", "A", 0.31, 10000.0],
+]
+
+dihedrals = [
+  [
+    ["A", "A", "A", "A"],
+    [
+      [-1],
+      [449.08790868, 610.2408724, -544.48626121, 251.59427866, -84.9918564],
+      [0.08, 0.46, 1.65, -0.96, 0.38],
+    ],
+    [1.0]
+  ],
+]
