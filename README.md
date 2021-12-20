@@ -1,5 +1,4 @@
 ## HyMD-tutorial
-Tutorial examples for HyMD:
 
 ####  [`ideal_gas`](ideal_gas/ideal_gas.ipynb)
 Monoatomic particles with no interactions.
@@ -29,4 +28,4 @@ ______
 ### Electrostatic interactions
 
 #### [`lipid_A`](lipid_A/lipid_A.ipynb)
-Model lipid A **two-particle bonds** and **three-particle bonds** and **&chi;-interactions** and **electrostatic interactions**.
+Model lipid A with **two-particle bonds** and **three-particle bonds** and **&chi;-interactions** and **electrostatic interactions**.
