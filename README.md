@@ -12,6 +12,9 @@ Monoatomic chains of particles connected by **two-particle bonds**.
 #### [`rods`](rods/rods.ipynb)
 Monoatomic chains of particles connected by **two-particle bonds** with bending stiffness due to anglar **three-particle bonds**.
 
+#### [`helixes`](helixes/helixes.ipynb)
+Monoatomic chains of particles connected by **two-particle bonds** and **four-particle torsional bonds**.
+
 ______
 ### Field interactions
 
