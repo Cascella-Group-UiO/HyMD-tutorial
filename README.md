@@ -30,5 +30,5 @@ Model DPPC with **two-particle bonds** and **three-particle bonds** and **&chi;-
 ______
 ### Electrostatic interactions
 
-#### [`lipid_A`](lipid_A/lipid_A.ipynb)
-Model lipid A with **two-particle bonds** and **three-particle bonds** and **&chi;-interactions** and **electrostatic interactions**.
+#### [`peptide`](peptide/peptide.ipynb)
+Model peptide with **two-particle bonds** and **three-particle bonds** and **four-particle torsional bonds** and **&chi;-interactions** and **electrostatic interactions**.
