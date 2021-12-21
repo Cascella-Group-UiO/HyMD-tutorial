@@ -1,0 +1,65 @@
+2021-12-21 01:25:05,159 INFO     [configure_runtime.py:131] <configure_runtime> {rank 0/6} Attempting to parse config file sds.toml as .toml
+2021-12-21 01:25:05,160 INFO     [configure_runtime.py:139] <configure_runtime> {rank 0/6} Successfully parsed sds.toml as .toml file
+2021-12-21 01:25:05,160 INFO     [configure_runtime.py:143] <configure_runtime> {rank 0/6} 
+
+	Config: /Users/mortenledum/Documents/HyMD-tutorial/sds/sds.toml
+	--------------------------------------------------
+	n_steps: 3000
+	time_step: 0.01
+	box_size: [8.3, 8.3, 8.3]
+	mesh_size: [64, 64, 64]
+	sigma: 0.5
+	kappa: 0.1
+	n_print: 1500
+	tau: 0.1
+	start_temperature: 298
+	target_temperature: 298
+	mass: None
+	hamiltonian: defaultwithchi
+	domain_decomposition: False
+	integrator: respa
+	respa_inner: 10
+	file_name: /Users/mortenledum/Documents/HyMD-tutorial/sds/sds.toml
+	name: None
+	tags: []
+	n_particles: None
+	max_molecule_size: 5
+	n_flush: 1
+	thermostat_work: 0.0
+	initial_energy: None
+	cancel_com_momentum: True
+	coulombtype: PIC_Spectral
+	dielectric_const: 45.0
+	command_line_full: /Users/mortenledum/Documents/HyMD/hymd/__main__.py sds.toml sds.HDF5 --seed 1 --verbose 1
+	bonds:
+		S C: 0.5, 1250.0
+		C C: 0.5, 1250.0
+	angle_bonds:
+		S C C: 170.0, 25.0
+		C C C: 180.0, 25.0
+	dihedrals:
+	chi:
+		C S: 13.5
+		Na S: 0.0
+		S W: -3.6
+		C Na: 13.5
+		C W: 33.75
+		Na W: 0.0
+	thermostat_coupling_groups:
+		S, C
+		W, Na
+
+2021-12-21 01:25:05,262 INFO     [input_parser.py:728] <check_mass> {rank 0/6} no mass specified, defaulting to 72.0
+2021-12-21 01:25:05,263 INFO     [input_parser.py:341] <check_n_particles> {rank 0/6} No n_particles found in toml file /Users/mortenledum/Documents/HyMD-tutorial/sds/sds.toml, defaulting to indices.shape (79270)
+2021-12-21 01:25:05,266 INFO     [thermostat.py:44] <generate_initial_velocities> {rank 0/6} Initialized 79270 velocities, target kinetic energy: 294612.07256814896, actual kinetic energy generated: 294612.08642578125
+2021-12-21 01:25:05,491 INFO     [main.py:182] <main> {rank 0/6} pfft-python processor mesh: (3, 2)
+2021-12-21 01:25:47,422 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       elec E       bond E        ang E        dih E           Px           Py           Pz
+            0            0          298   4.8953e+05   2.9461e+05   1.9491e+05   1.9106e+05       3060.4   4.7211e-07       795.04            0    -0.021904     0.016548    0.0017166
+2021-12-21 01:29:51,615 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       elec E       bond E        ang E        dih E           Px           Py           Pz
+         1500          150       298.02    3.568e+05   2.9463e+05        62166        52984       463.38       4207.4       4510.5            0    0.0024719   -0.0021973   -0.0010986
+2021-12-21 01:33:51,386 INFO     [main.py:954] <main> {rank 0/6} Elapsed time: 00:08:46.229505   Setup time: 00:00:42.266316   MD loop time: 00:08:03.963189
+2021-12-21 01:33:51,544 INFO     [file_io.py:524] <store_data> {rank 0/6} 
+         step         time         temp        tot E        kin E        pot E      field E       elec E       bond E        ang E        dih E           Px           Py           Pz
+         2999        299.9       297.62   3.5604e+05   2.9423e+05        61803        50095       398.86       5418.4         5890            0    0.0065918   -0.0045319   -0.0042572

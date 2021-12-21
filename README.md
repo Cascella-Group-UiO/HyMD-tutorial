@@ -31,4 +31,7 @@ ______
 ### Electrostatic interactions
 
 #### [`peptide`](peptide/peptide.ipynb)
-Model peptide with **two-particle bonds** and **three-particle bonds** and **four-particle torsional bonds** and **&chi;-interactions** and **electrostatic interactions**.
+Model peptide with **two-particle bonds** and **three-particle bonds** and **four-particle torsional bonds** and **&chi;-interactions** and **dipole reconstructed electrostatic interactions**.
+
+#### [`sds`](sds/sds.ipynb)
+Model SDS surfactant with **two-particle bonds** and **three-particle bonds** and **&chi;-interactions** and **electrostatic interactions** self-assembling into a micelle.
